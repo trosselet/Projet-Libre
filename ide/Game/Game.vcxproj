@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Label="ProjectConfigurations">
+        <ProjectConfiguration Include="Debug|Win32">
+            <Configuration>Debug</Configuration>
+            <Platform>Win32</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Release|Win32">
+            <Configuration>Release</Configuration>
+            <Platform>Win32</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Debug|x64">
+            <Configuration>Debug</Configuration>
+            <Platform>x64</Platform>
+        </ProjectConfiguration>
+        <ProjectConfiguration Include="Release|x64">
+            <Configuration>Release</Configuration>
+            <Platform>x64</Platform>
+        </ProjectConfiguration>
+    </ItemGroup>
+    <PropertyGroup Label="Globals">
+        <Keyword>Win32Proj</Keyword>
+        <ProjectGuid>{083E394A-0770-7A0C-4840-73FE54675434}</ProjectGuid>
+        <RootNamespace>MonProjet1</RootNamespace>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>true</UseDebugLibraries>
+        <PlatformToolset>v143</PlatformToolset>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>false</UseDebugLibraries>
+        <PlatformToolset>v143</PlatformToolset>
+        <WholeProgramOptimization>true</WholeProgramOptimization>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>true</UseDebugLibraries>
+        <PlatformToolset>v143</PlatformToolset>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+        <ConfigurationType>Application</ConfigurationType>
+        <UseDebugLibraries>false</UseDebugLibraries>
+        <PlatformToolset>v143</PlatformToolset>
+        <WholeProgramOptimization>true</WholeProgramOptimization>
+        <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+    <ImportGroup Label="ExtensionSettings">
+    </ImportGroup>
+    <ImportGroup Label="Shared">
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+        <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <PropertyGroup Label="UserMacros" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+        <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+        <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+        <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+        <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+        <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+        <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+        <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+        <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\intermediate\</IntDir>
+    </PropertyGroup>
+    <PropertyGroup Label="Vcpkg">
+        <VcpkgEnabled>false</VcpkgEnabled>
+        <VcpkgEnableManifest>false</VcpkgEnableManifest>
+        <VcpkgManifestRoot>$(SolutionDir)..\config\Game</VcpkgManifestRoot>
+        <VcpkgInstalledDir>$(SolutionDir)\vcpkg_installed\$(VcpkgTriplet)</VcpkgInstalledDir>
+    </PropertyGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+            <PrecompiledHeader>Use</PrecompiledHeader>
+            <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game;$(SolutionDir)..\libs\SFML\include;$(SolutionDir)..\src\Engine;$(SolutionDir)..\src\Render;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+        <Link>
+            <SubSystem>Windows</SubSystem>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <AdditionalLibraryDirectories>$(SolutionDir)..\libs\SFML\lib;$(SolutionDir)Engine\$(Platform)\$(Configuration);$(SolutionDir)Render\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>freetype.lib;gdi32.lib;opengl32.lib;winmm.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;sfml-main-s.lib;sfml-graphics-s.lib;sfml-audio-s.lib;sfml-window-s.lib;sfml-system-s.lib;%(AdditionalDependencies);Engine.lib;Render.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <FunctionLevelLinking>true</FunctionLevelLinking>
+            <IntrinsicFunctions>true</IntrinsicFunctions>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+            <PrecompiledHeader>Use</PrecompiledHeader>
+            <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game;$(SolutionDir)..\libs\SFML\include;$(SolutionDir)..\src\Engine;$(SolutionDir)..\src\Render;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+        <Link>
+            <SubSystem>Windows</SubSystem>
+            <EnableCOMDATFolding>true</EnableCOMDATFolding>
+            <OptimizeReferences>true</OptimizeReferences>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <AdditionalLibraryDirectories>$(SolutionDir)..\libs\SFML\lib;$(SolutionDir)Engine\$(Platform)\$(Configuration);$(SolutionDir)Render\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>freetype.lib;gdi32.lib;opengl32.lib;winmm.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;sfml-main-s.lib;sfml-graphics-s.lib;sfml-audio-s.lib;sfml-window-s.lib;sfml-system-s.lib;%(AdditionalDependencies);Engine.lib;Render.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>_DEBUG;_WINDOWS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+            <PrecompiledHeader>Use</PrecompiledHeader>
+            <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game;$(SolutionDir)..\libs\SFML\include;$(SolutionDir)..\src\Engine;$(SolutionDir)..\src\Render;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+        <Link>
+            <SubSystem>Windows</SubSystem>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <AdditionalLibraryDirectories>$(SolutionDir)..\libs\SFML\lib;$(SolutionDir)Engine\$(Platform)\$(Configuration);$(SolutionDir)Render\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>freetype.lib;gdi32.lib;opengl32.lib;winmm.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;sfml-main-s.lib;sfml-graphics-s.lib;sfml-audio-s.lib;sfml-window-s.lib;sfml-system-s.lib;%(AdditionalDependencies);Engine.lib;Render.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+        <ClCompile>
+            <WarningLevel>Level3</WarningLevel>
+            <FunctionLevelLinking>true</FunctionLevelLinking>
+            <IntrinsicFunctions>true</IntrinsicFunctions>
+            <SDLCheck>true</SDLCheck>
+            <PreprocessorDefinitions>NDEBUG;_WINDOWS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <ConformanceMode>true</ConformanceMode>
+            <LanguageStandard>stdcpp20</LanguageStandard>
+            <PrecompiledHeader>Use</PrecompiledHeader>
+            <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+            <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir)..\src\Game;$(SolutionDir)..\libs\SFML\include;$(SolutionDir)..\src\Engine;$(SolutionDir)..\src\Render;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+        <Link>
+            <SubSystem>Windows</SubSystem>
+            <EnableCOMDATFolding>true</EnableCOMDATFolding>
+            <OptimizeReferences>true</OptimizeReferences>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <AdditionalLibraryDirectories>$(SolutionDir)..\libs\SFML\lib;$(SolutionDir)Engine\$(Platform)\$(Configuration);$(SolutionDir)Render\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+            <AdditionalDependencies>freetype.lib;gdi32.lib;opengl32.lib;winmm.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;sfml-main-s.lib;sfml-graphics-s.lib;sfml-audio-s.lib;sfml-window-s.lib;sfml-system-s.lib;%(AdditionalDependencies);Engine.lib;Render.lib;%(AdditionalDependencies)</AdditionalDependencies>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemGroup>
+        <ClInclude Include="$(SolutionDir)..\src\Game\main.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\pch.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\Resources.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\Editor.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\Beach.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\Forest.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\MainMenu.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\Shop.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\TransitionBeachPlain.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\TransitionVillageForest.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\Village.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\Workshop.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\ThomasScene.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\BGMMusicScript.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\EntityFactory.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\EntityStateScript.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\InteractCraftingStation.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\InteractEyeBallScript.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\InteractFrostGuardianScript.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\InteractGrolux.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\ResourceInteraction.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\ZoneChanger.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\ZoneManager.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\InteractScript.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\Inventory.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\KeyCounter.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\menus\PauseMenu.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\menus\Traveler.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\MusicScript.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\ParticlesScript.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\PlayerMovement.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\QuestScript.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\resources\Craft.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\state-machine\State.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\state-machine\StateMachine.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\StatistiqueScript.h" />
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\tilemap\TilemapEditor.h" />
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="$(SolutionDir)..\src\Game\main.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\pch.cpp">
+            <PrecompiledHeader Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">Create</PrecompiledHeader>
+            <PrecompiledHeader Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">Create</PrecompiledHeader>
+            <PrecompiledHeader Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Create</PrecompiledHeader>
+            <PrecompiledHeader Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Create</PrecompiledHeader>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\Resources.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\editor\Editor.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\Beach.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\Forest.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\MainMenu.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\Shop.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\TransitionBeachPlain.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\TransitionVillageForest.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\Village.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\Workshop.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\ThomasScene.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\BGMMusicScript.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\EntityFactory.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\EntityStateScript.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\InteractCraftingStation.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\InteractEyeBallScript.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\InteractFrostGuardianScript.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\InteractGrolux.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\ResourceInteraction.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\ZoneManager.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\InteractScript.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\Inventory.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\KeyCounter.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\menus\PauseMenu.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\menus\Traveler.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\MusicScript.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\ParticlesScript.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\PlayerMovement.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\QuestScript.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\resources\Craft.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\state-machine\State.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\state-machine\StateMachine.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\StatistiqueScript.cpp" />
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\tilemap\TilemapEditor.cpp" />
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="$(SolutionDir)\Engine\Engine.vcxproj">
+            <Project>{1AEB28B0-6DCA-68F0-1715-71102C4C7BBA}</Project>
+        </ProjectReference>
+        <ProjectReference Include="$(SolutionDir)\Render\Render.vcxproj">
+            <Project>{19CA6112-10C3-5A46-786A-60A807E23A86}</Project>
+        </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+    <ImportGroup Label="ExtensionTargets">
+    </ImportGroup>
+</Project>

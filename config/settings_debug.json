@@ -1,0 +1,120 @@
+{
+  "projects": {
+    "Engine": {
+      "additionalDependencies": [
+        "freetype.lib",
+        "gdi32.lib",
+        "opengl32.lib",
+        "winmm.lib",
+        "flac.lib",
+        "vorbisenc.lib",
+        "vorbisfile.lib",
+        "vorbis.lib",
+        "ogg.lib",
+        "sfml-main-s-d.lib",
+        "sfml-graphics-s-d.lib",
+        "sfml-audio-s-d.lib",
+        "sfml-window-s-d.lib",
+        "sfml-system-s-d.lib",
+        "%(AdditionalDependencies)"
+      ],
+      "additionalIncludeDirectories": [
+        "$(SolutionDir)..\\libs\\SFML\\include"
+      ],
+      "additionalLibraryDirectories": [
+        "$(SolutionDir)..\\libs\\SFML\\lib"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "Game"
+      ],
+      "guid": "1AEB28B0-6DCA-68F0-1715-71102C4C7BBA",
+      "lib": true,
+      "pch": true,
+      "preprocessorDefinitions": [
+        "SFML_STATIC"
+      ],
+      "vcpkg": false,
+      "window": false
+    },
+    "Game": {
+      "additionalDependencies": [
+        "freetype.lib",
+        "gdi32.lib",
+        "opengl32.lib",
+        "winmm.lib",
+        "flac.lib",
+        "vorbisenc.lib",
+        "vorbisfile.lib",
+        "vorbis.lib",
+        "ogg.lib",
+        "sfml-main-s-d.lib",
+        "sfml-graphics-s-d.lib",
+        "sfml-audio-s-d.lib",
+        "sfml-window-s-d.lib",
+        "sfml-system-s-d.lib",
+        "%(AdditionalDependencies)"
+      ],
+      "additionalIncludeDirectories": [
+        "$(SolutionDir)..\\libs\\SFML\\include"
+      ],
+      "additionalLibraryDirectories": [
+        "$(SolutionDir)..\\libs\\SFML\\lib"
+      ],
+      "dependencies": [
+        "Engine",
+        "Render"
+      ],
+      "dependents": [],
+      "guid": "083E394A-0770-7A0C-4840-73FE54675434",
+      "lib": false,
+      "pch": true,
+      "preprocessorDefinitions": [
+        "SFML_STATIC"
+      ],
+      "vcpkg": false,
+      "window": true
+    },
+    "Render": {
+      "additionalDependencies": [
+        "freetype.lib",
+        "gdi32.lib",
+        "opengl32.lib",
+        "winmm.lib",
+        "flac.lib",
+        "vorbisenc.lib",
+        "vorbisfile.lib",
+        "vorbis.lib",
+        "ogg.lib",
+        "sfml-main-s-d.lib",
+        "sfml-graphics-s-d.lib",
+        "sfml-audio-s-d.lib",
+        "sfml-window-s-d.lib",
+        "sfml-system-s-d.lib",
+        "%(AdditionalDependencies)"
+      ],
+      "additionalIncludeDirectories": [
+        "$(SolutionDir)..\\libs\\SFML\\include"
+      ],
+      "additionalLibraryDirectories": [
+        "$(SolutionDir)..\\libs\\SFML\\lib"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "Game"
+      ],
+      "guid": "19CA6112-10C3-5A46-786A-60A807E23A86",
+      "lib": true,
+      "pch": false,
+      "preprocessorDefinitions": [
+        "SFML_STATIC"
+      ],
+      "vcpkg": false,
+      "window": false
+    }
+  },
+  "solution_guid": "14E21554-7EF0-3C34-254B-19D1358F1C53",
+  "solution_name": "BestJeuSimulator",
+  "startup_project": "Game",
+  "version": "1.17.4"
+}

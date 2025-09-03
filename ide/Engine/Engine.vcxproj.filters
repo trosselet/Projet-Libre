@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+            <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{93995380-89BD-4B04-88EB-625FBE52EBFB}</UniqueIdentifier>
+            <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+        </Filter>
+        <Filter Include="Images">
+            <UniqueIdentifier>{6E901252-3135-5382-5769-143D295A57A6}</UniqueIdentifier>
+            <Extensions>png;jpg;jpeg;dds;bmp;tif;tiff;gif;ico;svg</Extensions>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{67DA6AB6-F800-4C08-8B7A-83BB121AAD01}</UniqueIdentifier>
+            <Extensions>rc;cur;dlg;rc2;rct;bin;rgs;resx;wav;mfcribbon-ms</Extensions>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\Animator.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\Camera.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\Collider2D.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\Colliders\AABBCollider.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\Colliders\CircleCollider.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\Colliders\CollisionManifold.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\Colliders\SpatialGrid.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\Component.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\Light.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\ParticleEmitter.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\PhysicsMaterial.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\RigidBody2D.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\SpriteRenderer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\Tilemap.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\ui\Button.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\ui\Image.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\ui\ProgressBar.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Components\ui\Text.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\ECS.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\ECS.inl">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Entity.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Entity.inl">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Systems\AnimatorSystem.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Systems\CameraSystem.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Systems\CollisionSystem.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Systems\ParticleSystem.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Systems\PhysicsSystem.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Systems\RenderSystem.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ECS\Systems\UserInterfaceSystem.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Engine.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\GameTimer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Inputs\Inputs.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Inputs\Keyboard.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Inputs\Mouse.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Managers\GameManager.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Managers\GameManager.inl">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Managers\Scene.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Managers\SceneManager.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\ObjectFactory.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\pch.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Scripts\Script.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Scripts\ScriptManager.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Scripts\ScriptManager.inl">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Transform.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Utils\CoreUtils.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Utils\Debug.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Utils\Maths.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Engine\Utils\Profiler.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\Animator.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\Camera.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\Collider2D.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\Colliders\AABBCollider.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\Colliders\CircleCollider.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\Colliders\CollisionManifold.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\Colliders\SpatialGrid.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\Component.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\Light.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\ParticleEmitter.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\PhysicsMaterial.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\RigidBody2D.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\SpriteRenderer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\Tilemap.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\ui\Button.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\ui\Image.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\ui\ProgressBar.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Components\ui\Text.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\ECS.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Entity.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Systems\AnimatorSystem.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Systems\CameraSystem.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Systems\CollisionSystem.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Systems\ParticleSystem.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Systems\PhysicsSystem.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Systems\RenderSystem.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\ECS\Systems\UserInterfaceSystem.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Engine.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\GameTimer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Inputs\Inputs.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Inputs\Keyboard.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Inputs\Mouse.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Managers\GameManager.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Managers\Scene.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Managers\SceneManager.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Scripts\Script.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Scripts\ScriptManager.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Transform.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Utils\CoreUtils.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Utils\Debug.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Utils\Maths.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Engine\Utils\Profiler.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+</Project>

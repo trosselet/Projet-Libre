@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+            <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{93995380-89BD-4B04-88EB-625FBE52EBFB}</UniqueIdentifier>
+            <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+        </Filter>
+        <Filter Include="Images">
+            <UniqueIdentifier>{6E901252-3135-5382-5769-143D295A57A6}</UniqueIdentifier>
+            <Extensions>png;jpg;jpeg;dds;bmp;tif;tiff;gif;ico;svg</Extensions>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{67DA6AB6-F800-4C08-8B7A-83BB121AAD01}</UniqueIdentifier>
+            <Extensions>rc;cur;dlg;rc2;rct;bin;rgs;resx;wav;mfcribbon-ms</Extensions>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <ClInclude Include="$(SolutionDir)..\src\Game\main.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\pch.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\Resources.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\Editor.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\Beach.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\Forest.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\MainMenu.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\Shop.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\TransitionBeachPlain.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\TransitionVillageForest.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\Village.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\finals\Workshop.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scenes\ThomasScene.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\BGMMusicScript.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\EntityFactory.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\EntityStateScript.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\InteractCraftingStation.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\InteractEyeBallScript.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\InteractFrostGuardianScript.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\InteractGrolux.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\ResourceInteraction.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\ZoneChanger.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\interact\ZoneManager.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\InteractScript.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\Inventory.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\KeyCounter.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\menus\PauseMenu.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\menus\Traveler.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\MusicScript.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\ParticlesScript.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\PlayerMovement.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\QuestScript.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\resources\Craft.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\state-machine\State.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\state-machine\StateMachine.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\StatistiqueScript.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Game\scripts\tilemap\TilemapEditor.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="$(SolutionDir)..\src\Game\main.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\Resources.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\editor\Editor.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\Beach.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\Forest.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\MainMenu.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\Shop.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\TransitionBeachPlain.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\TransitionVillageForest.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\Village.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\finals\Workshop.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scenes\ThomasScene.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\BGMMusicScript.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\EntityFactory.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\EntityStateScript.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\InteractCraftingStation.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\InteractEyeBallScript.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\InteractFrostGuardianScript.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\InteractGrolux.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\ResourceInteraction.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\interact\ZoneManager.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\InteractScript.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\Inventory.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\KeyCounter.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\menus\PauseMenu.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\menus\Traveler.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\MusicScript.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\ParticlesScript.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\PlayerMovement.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\QuestScript.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\resources\Craft.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\state-machine\State.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\state-machine\StateMachine.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\StatistiqueScript.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Game\scripts\tilemap\TilemapEditor.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+</Project>
